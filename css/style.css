@@ -785,7 +785,6 @@ h6,
 
 .schedule {
     min-width: 100%;
-    color: var(--primary);
     font-family: sans-serif;
     text-align: center;
     min-height: 100%;
@@ -816,6 +815,9 @@ h6,
   #countdown ul li span {
     display: block;
     font-size: 3rem;
+    background: -webkit-linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 768px) {
@@ -914,6 +916,9 @@ h6,
   }
 
   @media (max-width: 768px) {
+    .w-100 {
+      max-width: 600%;
+    }
     .sponsor {
         max-width: 500px;
       }
@@ -980,8 +985,7 @@ aside .sideinfo b.active span {
  a h4{
     background-image: linear-gradient(
         to right,
-        #54b3d6,
-        #54b3d6 50%,
+        rgba(59,173,227,1) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%,
         #000 50%
       );
       background-size: 200% 100%;
@@ -996,7 +1000,7 @@ aside .sideinfo b.active span {
 
  a h4::before {
     content: '';
-    background: #54b3d6;
+    background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
     display: block;
     position: absolute;
     bottom: -3px;
@@ -1015,8 +1019,7 @@ aside .sideinfo b.active span {
   a p{
     background-image: linear-gradient(
         to right,
-        #54b3d6,
-        #54b3d6 50%,
+        rgba(59,173,227,1) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 50%,
         #000 50%
       );
       background-size: 200% 100%;
@@ -1030,7 +1033,7 @@ aside .sideinfo b.active span {
 
  a p::before {
     content: '';
-    background: #54b3d6;
+    background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
     display: block;
     position: absolute;
     bottom: -3px;
@@ -1052,4 +1055,48 @@ aside .sideinfo b.active span {
     }
   }
 
-  
+  .text-gradient {
+    background: -webkit-linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .template ul {
+    padding: 0;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+  .template ul li {
+    flex: 5%;
+    padding: 2%;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+  }
+
+  .btn-sponsor {
+    background: rgba(185, 184, 184, 0.212);
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  .sup span ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+  }
+  .sup span ul li {
+    flex: 25%;
+    padding: 2%;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+  }
+
+  .bg-grey {
+    background-color: rgb(248, 246, 246);
+  }
