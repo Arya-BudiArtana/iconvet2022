@@ -337,7 +337,7 @@ h6,
     color: #f82249;
   }
 
-  #header.header-top .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  #header.header-top .navbar-mobile a:hover, #header.header-top .navbar-mobile .active, .navbar-mobile li:hover > a {
     color: #f82249;
   }
   .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
@@ -874,7 +874,7 @@ h6,
   }
   
     .button-top {
-        width: 600px;
+        width: 300px;
     }
     .button-top a span{
         font-size: 15px;
@@ -882,9 +882,13 @@ h6,
     .button-top .margin {
         padding-top: 0.25rem !important;
         padding-bottom: 0.25rem !important;
-        padding-right: 0.5rem !important;
-        padding-left: 0.5rem !important;
+        padding-right: 0.75rem !important;
+        padding-left: 0.75rem !important;
         margin-right: 0.1rem;
+    }
+
+    .button-top .book {
+      margin-top: 1.5rem;
     }
   }
 
@@ -1041,24 +1045,8 @@ aside .sideinfo b.active span {
     width: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 668px) {
     .container-items{
         width: 95%;
     }
-    a p {
-        font-size: 15px;
-    }
-    a p::before{
-        content: '';
-        position: absolute;
-        width: 90%;
-        height: 4px;
-        border-radius: 4px;
-        background-color: #54b3d6;
-        bottom: 0;
-        left: 0;
-        transform-origin: right;
-        transform: scaleX(0);
-        transition: transform .3s ease-in-out;
-      }
   }
