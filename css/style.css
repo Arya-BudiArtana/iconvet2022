@@ -274,8 +274,17 @@ h6,
   /**
   * Mobile Navigation 
   */
-  .mobile-nav-toggle {
-    color: #fff;
+  .bi-list{
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+
+.bi-x{
+    color: rgb(255, 255, 255);
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -316,7 +325,7 @@ h6,
     bottom: 15px;
     left: 15px;
     padding: 10px 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.541);
     overflow-y: auto;
     transition: 0.3s;
   }
@@ -843,6 +852,22 @@ h6,
     }
 
   @media (max-width: 768px) {
+    .button-top {
+        width: 600px;
+    }
+    .button-top a span{
+        font-size: 15px;
+    }
+    .button-top .margin {
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+        margin-right: 0.1rem;
+    }
+  }
+
+  @media (max-width: 668px) {
     .button-top {
         width: 600px;
     }
