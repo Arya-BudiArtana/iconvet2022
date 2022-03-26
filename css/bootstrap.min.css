@@ -18,7 +18,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,24,144,1) 35%, rgba(0,212,255,1) 100%);
+  --bs-primary: linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -2551,12 +2551,12 @@ fieldset:disabled .btn {
 }
 .btn-primary {
   color: #000;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,24,144,1) 0%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
   border-color: none;
 }
 .btn-primary:hover {
   color: #000;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,24,144,1) 0%, rgba(0,78,255,1) 70%);
+  background: linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
   border-color: #be9874;
 }
 .btn-check:focus + .btn-primary,
