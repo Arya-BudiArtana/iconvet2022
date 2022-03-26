@@ -125,13 +125,6 @@ h6,
     align-items: center;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    white-space: nowrap;
-    transition: 0.3s;
-    position: relative;
-    padding: 6px 4px;
   }
   #header #logo h1 {
     font-size: 36px;
@@ -341,6 +334,10 @@ h6,
     color: #060c22;
   }
   .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #f82249;
+  }
+
+  #header.header-top .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
     color: #f82249;
   }
   .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
@@ -868,6 +865,14 @@ h6,
   }
 
   @media (max-width: 668px) {
+    
+  #header.header-top .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+  }
+  
     .button-top {
         width: 600px;
     }
