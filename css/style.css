@@ -453,45 +453,6 @@ h6,
     color: var(--light);
 }
 
-#about {
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    color: #fff;
-    padding: 60px 0 40px 0;
-  }
-  @media (min-width: 1024px) {
-    #about {
-      background-attachment: fixed;
-    }
-  }
-  #about:before {
-    content: "";
-    background: rgba(13, 20, 41, 0.8);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  #about h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  #about h3 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  #about p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #fff;
-  }
 /*** Section Title ***/
 .section-title {
     color: var(--primary);
@@ -1233,46 +1194,6 @@ aside .sideinfo b.active span {
     background-image: radial-gradient(farthest-corner at 50% 20%, rgba(252,252,252,0) 0%, rgba(252,252,252,0.4) 100%);
   }
 
-  
-.table100 .ps__rail-y {
-  width: 9px;
-  background-color: transparent;
-  opacity: 1 !important;
-  right: 5px;
-}
-
-.table100 .ps__rail-y::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #ebebeb;
-  border-radius: 5px;
-  width: 100%;
-  height: calc(100% - 30px);
-  left: 0;
-  top: 15px;
-}
-
-.table100 .ps__rail-y .ps__thumb-y {
-  width: 100%;
-  right: 0;
-  background-color: transparent;
-  opacity: 1 !important;
-}
-
-.table100 .ps__rail-y .ps__thumb-y::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #cccccc;
-  border-radius: 5px;
-  width: 100%;
-  height: calc(100% - 30px);
-  left: 0;
-  top: 15px;
-}
-
-
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
 
@@ -1406,17 +1327,6 @@ th, td {
   -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
-.table100.ver1 .ps__rail-y {
-  right: 5px;
-}
-
-.table100.ver1 .ps__rail-y::before {
-  background-color: #ebebeb;
-}
-
-.table100.ver1 .ps__rail-y .ps__thumb-y::before {
-  background-color: #cccccc;
-}
 
 
 
@@ -1454,18 +1364,6 @@ th, td {
   -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
-}
-
-.table100.fee .ps__rail-y {
-  right: 5px;
-}
-
-.table100.fee .ps__rail-y::before {
-  background-color: #ebebeb;
-}
-
-.table100.fee .ps__rail-y .ps__thumb-y::before {
-  background-color: #cccccc;
 }
 
 /*==================================================================
