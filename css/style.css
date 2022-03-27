@@ -3,6 +3,8 @@
     --primary:  linear-gradient(45deg, rgba(59,173,227,1) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
     --light: #F8F8F8;
     --dark: #252525;
+    --primary-gradient:rgba(68, 70, 183, 0.87);
+    --secondary-gradient:rgba(6, 98, 218, 0.849);
 }
 
 h1,
@@ -334,11 +336,11 @@ h6,
     color: #060c22;
   }
   .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: #f82249;
+    background-image: var(--primary);
   }
 
   #header.header-top .navbar-mobile a:hover, #header.header-top .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: #f82249;
+    color: black;
   }
   .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
     margin: 15px;
@@ -1103,4 +1105,118 @@ aside .sideinfo b.active span {
 
   .bg-grey {
     background-color: #fcfcfc;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+
+   .timeline::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: rgb(245, 245, 245);
+    top: 1%;
+    bottom: 8%;
+    left: 100%;
+    margin-left: -2px;
+   }
+
+   .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 99.99%;
+   }
+
+   .timeline-item::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -9px;
+    background-color: #1a0fb4;
+    border: 2px solid #fff;
+    top: 22px;
+    border-radius: 50%;
+    z-index: 1;
+   }
+
+   .left {
+    left: 0;
+   }
+
+   .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+   }
+
+   .right::after {
+    left: -10px;
+   }
+
+   .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+   }
+
+   /* Responsive on screens less than 600px wide */
+   @media screen and (max-width: 600px) {
+    .timeline::after {
+       left: 31px;
+    }
+
+    .timeline-item {
+       width: 100%;
+       padding-left: 70px;
+       padding-right: 25px;
+    }
+
+    .timeline-item::before {
+       left: 60px;
+       border: medium solid white;
+       border-width: 10px 10px 10px 0;
+       border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+       left: 21px;
+    }
+
+    .right {
+       left: 0%;
+    }
+   }
+
+   .bg-overlay {
+    background: linear-gradient(135deg, var(--primary-gradient),var(--secondary-gradient)),
+    url("https://t-2.tstatic.net/tribunnewswiki/foto/bank/images/undiksha.jpg") no-repeat center center / cover;
+   }
+
+   .card {
+     max-height: 50vh;
+     border-radius: 20px;
+   }
+
+   @media screen and (max-width: 800px) {
+    .card {
+      max-height: 65vh;
+    }
+
+    .ms-5 {
+      margin-right: 0;
+    }
   }
