@@ -1183,6 +1183,16 @@ aside .sideinfo b.active span {
       margin-right: 0;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .card {
+      max-height: 75vh;
+    }
+
+    .ms-5 {
+      margin-right: 0;
+    }
+  }
  #scope ul {
     list-style: none
   }
