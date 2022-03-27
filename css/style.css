@@ -1739,6 +1739,10 @@ th, td {
     line-height: 1;
     background-color: #ffffff;
   }
+
+  .table100.fee td {
+    line-height: 1;
+  }
   .p-table {
     padding-left: 0.5rem;
   }
