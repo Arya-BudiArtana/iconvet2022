@@ -1352,7 +1352,7 @@ th, td {
 }
 
 .table100-body {
-  max-height: 585px;
+  max-height: 885px;
   overflow: auto;
 }
 
@@ -1720,6 +1720,10 @@ th, td {
   background-color: #cccccc;
 }
 
+.p-table {
+  padding-left: 1.5rem;
+}
+
 @media screen and (max-width: 800px) {
   .column1 {
     width: 33%;
@@ -1732,9 +1736,18 @@ th, td {
   .table100.fee th{
     font-family: Lato-Regular;
     color: rgb(46, 45, 45);
-    font-size: 15px;
-    line-height: 1.4;
-  
+    font-size: 13px;
+    line-height: 1;
     background-color: #ffffff;
   }
+  .p-table {
+    padding-left: 0.5rem;
+  }
+  .table100.fee td {
+    font-family: Lato-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 0.88;
+  }
+
 }
