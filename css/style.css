@@ -1418,8 +1418,8 @@ aside .sideinfo b.active span {
      border-radius: 20px;
    }
 
-   #journal .card {
-    max-height: 190vh;
+   #journal .card, #steer .card {
+    max-height: 100%;
     border-radius: 20px;
   }
 
@@ -2007,7 +2007,7 @@ h4.text-trans {
   padding-left: 15px;
 }
 
-#committee p span {
+#committee p span, #steer p span {
   display: block;
   position: relative;
   top: -4px;
