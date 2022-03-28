@@ -402,6 +402,10 @@ h6,
   #header #logo img {
     max-height: 30px;
   }
+
+  .activities ul li {
+    max-width: 250px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -555,6 +559,10 @@ h6,
   .navbar ul {
     display: none;
   }
+
+  .activities ul li {
+    max-width: 250px;
+  }
 }
 .navbar-mobile {
   position: fixed;
@@ -658,6 +666,10 @@ h6,
   .header-carousel .owl-carousel-item {
     position: relative;
     min-height: 500px;
+  }
+
+  .activities ul li {
+    max-width: 250px;
   }
 
   .header-carousel .owl-carousel-item img {
@@ -1058,6 +1070,10 @@ h6,
   #countdown {
     max-width: 500px;
   }
+
+  .activities ul li {
+    max-width: 250px;
+  }
   #countdown ul {
     padding: 0;
     display: flex;
@@ -1098,6 +1114,9 @@ h6,
   .button-top a span {
     font-size: 15px;
   }
+  .activities ul li {
+    max-width: 250px;
+  }
   .button-top .margin {
     padding-top: 0.25rem !important;
     padding-bottom: 0.25rem !important;
@@ -1130,7 +1149,8 @@ h6,
     margin-right: 0.1rem;
   }
 
-  .button-top .book {
+  .button-top .book,
+  .button-table .book {
     margin-top: 1.5rem;
   }
 }
@@ -1488,20 +1508,19 @@ a p:hover::before {
 }
 
 @media screen and (max-width: 800px) {
-
   .ms-5 {
     margin-right: 0;
   }
 }
 
 @media screen and (max-width: 900px) {
-
   .ms-5 {
     margin-right: 0;
   }
 }
 #scope ul,
-#committee ul {
+#committee ul,
+#virtual ul {
   list-style: none;
 }
 #scope .col-lg-4 ul li::before {
@@ -1512,9 +1531,34 @@ a p:hover::before {
   width: 1em;
   margin-left: -1em;
 }
+#virtual ul li {
+  line-height: 2;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.padding-ul {
+  padding-right: 5rem !important;
+}
+
+#virtual ul li::before {
+  content: "\2022";
+  color: rgb(83, 120, 207);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
 
 #scope ul h4 {
   margin-left: -1em;
+}
+
+#virtual ul h4 {
+  margin-left: -1em;
+}
+
+#virtual ul p {
+  margin-left: -1.5em;
 }
 
 #committee .col-lg-4 h4 {
@@ -1958,6 +2002,9 @@ h4.text-trans {
     width: 33%;
     padding-left: 20px;
   }
+  .padding-ul {
+    padding-right: 0rem !important;
+  }
 
   .column5 {
     width: 60%;
@@ -2065,4 +2112,99 @@ h4.text-trans {
   display: block;
   position: relative;
   top: -4px;
+}
+
+.btn-zoom {
+  background: #004eff;
+  color: white;
+}
+
+.activities ul {
+  margin: 0;
+  list-style: none;
+  position: relative;
+  padding: 1px 100px;
+  color: rgb(78, 77, 77);
+  font-size: 13px;
+}
+.activities ul:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed #fff;
+}
+.activities ul li {
+  position: relative;
+  margin-left: 30px;
+  background-color: rgb(255, 255, 255);
+  padding: 14px;
+  border-radius: 6px;
+  width: 400px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+.activities ul li:not(:first-child) {
+  margin-top: 60px;
+}
+.activities ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.activities ul li > span:before,
+.activities ul li > span:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #0010f6;
+  left: -6px;
+  top: 0;
+}
+.activities ul li span:after {
+  top: 100%;
+}
+.activities ul li > div {
+  margin-left: 10px;
+}
+
+.activities div .title,
+.activities div .type {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.activities div .info {
+  font-weight: 300;
+}
+
+.activities div > div {
+  margin-top: 5px;
+}
+
+.activities span.number {
+  height: 100%;
+}
+.activities span.number span {
+  position: absolute;
+  font-size: 15px;
+  left: -53px;
+  color: white;
+  font-weight: bold;
+}
+.activities span.number span:first-child {
+  top: 0;
+}
+.activities span.number span:last-child {
+  top: 100%;
+}
+@media (max-width: 768px) {
+  .activities ul li {
+    width: 250px;
+  }
 }
