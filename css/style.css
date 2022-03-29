@@ -2033,7 +2033,9 @@ h4.text-trans {
 .trans {
   background: #fffefece;
 }
-
+.text-trans {
+  display: none;
+}
 @media screen and (max-width: 980px) {
   h4.text-trans {
     display: none;
@@ -2207,4 +2209,42 @@ h4.text-trans {
   .activities ul li {
     width: 250px;
   }
+}
+.information {
+  margin: 15px 20px;
+	background-color: rgb(202, 197, 197);
+	border-radius: 10px;
+	display: flex;
+  height: 75px;
+	overflow: hidden;
+  padding-top: 7px;
+  padding-left: 7px;
+}
+
+.information-info {
+	padding: 20px;
+	position: relative;
+    color: #333;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.wa a, .information-preview{
+    background-color: rgba(20, 20, 20, 0.924);
+    border-radius: 10px;
+    color: #066e14;
+    height: 60px;
+    padding: 5px 20px 10px 20px;
+}
+.wa .information-info{
+    color: #999;
+}
+.wa a:hover{
+    background-color: rgba(20, 20, 20, 1);
+}
+
+@media (max-width: 768px) {
+  .wa a, .information-preview{
+    padding-top: 10px;
+}
 }

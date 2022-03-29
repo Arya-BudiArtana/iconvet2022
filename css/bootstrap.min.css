@@ -2533,7 +2533,7 @@ textarea.form-control.is-invalid {
   }
 }
 .btn:hover {
-  color: #777;
+  color: rgb(255, 255, 255);
 }
 
 .btn-rounded {
