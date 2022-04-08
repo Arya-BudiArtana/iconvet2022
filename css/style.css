@@ -2248,3 +2248,9 @@ h4.text-trans {
     padding-top: 10px;
 }
 }
+
+.speak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
