@@ -1052,7 +1052,7 @@ h6,
   list-style: none;
   border-radius: 5px;
 }
-#countdown ul li span {
+#countdown ul li mark{
   display: block;
   font-size: 3rem;
   background: -webkit-linear-gradient(
@@ -1064,6 +1064,10 @@ h6,
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+del {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -2314,7 +2318,9 @@ h4.text-trans {
     background-color: #507bfc;
     border-radius: 0px 0px 10px 10px;
 }
-
+mark{
+  background-color: transparent;
+}
 .details{
     display: flex;
 
