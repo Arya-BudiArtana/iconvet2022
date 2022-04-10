@@ -16,9 +16,14 @@
   --primary-gradient2: rgba(85, 155, 236, 0.822);
   --secondary-gradient2: rgba(37, 177, 158, 0.787);
 }
-*{
-  box-sizing: border-box
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
+
 h1,
 h2,
 .h1,
@@ -1084,7 +1089,7 @@ del {
     list-style: none;
     border-radius: 5px;
   }
-  #countdown ul li span {
+  #countdown ul li mark {
     display: block;
     font-size: 1.8rem;
   }
