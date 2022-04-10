@@ -1862,7 +1862,7 @@
                 hour = min * 60,
                 day = hour * 24;
 
-            const end = new Date("October 6, 2021 08:00:00").getTime();
+            const end = new Date("October 6, 2022 08:00:00").getTime();
 
             const int = setInterval(() => {
                 const current = new Date().getTime();
@@ -1872,7 +1872,10 @@
                 document.getElementById("minutes").innerText = Math.floor((remaining % hour) / min);
                 document.getElementById("seconds").innerText = Math.floor((remaining % min) / sec);
                 if (remaining < 0) {
-                    document.querySelectorAll("del").innerText = "We Have Arrived!";
+                    const arrived = document.querySelectorAll("del");
+                    arrived.forEach((arrived) => {
+                        arrived.innerText = "We Have Arrived!";
+                    });
                     const digit = document.querySelectorAll("mark");
                     digit.forEach((digit) => {
                         digit.innerText = "0";
