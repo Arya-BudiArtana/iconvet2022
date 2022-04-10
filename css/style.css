@@ -2349,6 +2349,10 @@ mark{
   .box{
         flex-grow: 0.7;
     }
+
+    #countdown ul li mark{
+      font-size: 2rem;
+    }
 }
 
 @media(min-width:1600px){
