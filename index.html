@@ -206,7 +206,7 @@
                                         <a href="https://conference.undiksha.ac.id/iconvet/" target="blank">
                                             <h4 class="mb-0">ICONVET 2021</h4>
                                         </a>
-                                        <a href="">
+                                        <a href="https://iopscience.iop.org/issue/1742-6596/1516/1">
                                             <p class="mb-1"> Publication IconVET 2021 on IOP Journal of Physics:
                                                 Conference Series</p>
                                         </a>
@@ -222,7 +222,7 @@
                                         <a href="https://conference.undiksha.ac.id/iconvet/2020/" target="blank">
                                             <h4 class="mb-0">ICONVET 2020</h4>
                                         </a>
-                                        <a href="">
+                                        <a href="https://iopscience.iop.org/issue/1742-6596/1516/1">
                                             <p class="mb-1">Publication IconVET 2020 on IOP Journal of Physics:
                                                 Conference Series</p>
                                         </a>
@@ -238,7 +238,7 @@
                                         <a href="https://conference.undiksha.ac.id/iconvet/2019/" target="blank">
                                             <h4 class="mb-0">ICONVET 2019</h4>
                                         </a>
-                                        <a href="">
+                                        <a href="https://iopscience.iop.org/issue/1742-6596/1165/1">
                                             <p class="mb-1">Publication IconVET 2019 on IOP Journal of Physics:
                                                 Conference Series</p>
                                         </a>
@@ -254,7 +254,7 @@
                                         <a href="https://conference.undiksha.ac.id/iconvet/2018/" target="blank">
                                             <h4 class="mb-0">ICONVET 2018</h4>
                                         </a>
-                                        <a href="">
+                                        <a href="https://iopscience.iop.org/issue/1742-6596/1165/1">
                                             <p class="mb-1">Publication IconVET 2018 on IOP Journal of Physics:
                                                 Conference Series</p>
                                         </a>
@@ -736,31 +736,32 @@
                     <div class="timeline pb-5">
                         <div class="timeline-item left">
                             <div class="content">
-                                <h5>APRIL 25<sup>TH</sup>, 2022</h1>
+                                <h5>APRIL 25<sup>TH</sup>, 2022</h5>
                                     <p>Submision Open</p>
                             </div>
                         </div>
                         <div class="timeline-item left">
                             <div class="content">
-                                <h5>JUNE 27<sup>TH</sup>, 2022</h1>
+                                <h5>JUNE 27<sup>TH</sup>, 2022</h5>
                                     <p>Full Paper Deadline</p>
                             </div>
                         </div>
                         <div class="timeline-item left">
                             <div class="content">
-                                <h5>AUGUST 27<sup>TH</sup>, 2022</h1>
+                                <h5>AUGUST 27<sup>TH</sup>, 2022</h5>
+                                <!-- <h6 style="text-decoration: line-through;">AUGUST 27<sup>TH</sup>, 2022</h6> -->
                                     <p>Notification of Acceptance</p>
                             </div>
                         </div>
                         <div class="timeline-item left">
                             <div class="content">
-                                <h5>SEPTEMBER 26<sup>TH</sup>, 2022</h1>
+                                <h5>SEPTEMBER 26<sup>TH</sup>, 2022</h5>
                                     <p>Camera Ready</p>
                             </div>
                         </div>
                         <div class="timeline-item left">
                             <div class="content">
-                                <h5>OCTOBER 6<sup>TH</sup> - 7<sup>TH</sup>, 2022</h1>
+                                <h5>OCTOBER 6<sup>TH</sup> - 7<sup>TH</sup>, 2022</h5>
                                     <p>Conferences Day</p>
                             </div>
                         </div>
@@ -1872,7 +1873,10 @@
                 document.getElementById("minutes").innerText = Math.floor((remaining % hour) / min);
                 document.getElementById("seconds").innerText = Math.floor((remaining % min) / sec);
                 if (remaining < 0) {
-                    document.querySelectorAll("del").innerText = "We Have Arrived!";
+                    const arrive = document.querySelectorAll("del");
+                    arrive.forEach((arrive) => {
+                        arrive.innerText = "We Have Arrived!";
+                    });
                     const digit = document.querySelectorAll("mark");
                     digit.forEach((digit) => {
                         digit.innerText = "0";
