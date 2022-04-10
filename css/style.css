@@ -2328,8 +2328,9 @@ mark{
     flex-direction: column;
 }
 .details img{
-    width:260px;
-    height: 260px;
+    min-width:260px;
+
+    max-height: 300px;
     overflow: hidden;
     object-position: center;
 }
@@ -2380,6 +2381,22 @@ mark{
 @media(min-width:1600px){
   #team .container{
     flex-wrap: nowrap;
+}
+
+}
+
+@media(min-width:1000px){
+  .details img{
+    width:260px;
+    height: 260px;
+}
+
+}
+
+@media(min-width:600px){
+  .details img{
+    width:260px;
+    height: 260px;
 }
 
 }
