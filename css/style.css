@@ -2254,3 +2254,119 @@ h4.text-trans {
   justify-content: center;
   align-items: center;
 }
+
+
+#team{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading{
+    font-size: 1.3rem;
+    color: #2c2c2c;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.heading i{
+    background-color: #507bfc;
+    box-shadow: 2px 5px 30px rgba(80,123,252,0.4);
+    color: #ffffff;
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 0px 20px;
+}
+.box{
+    width:266px;
+    height: 440px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+}
+#team .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-bar{
+    width:50%;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    background-color: #507bfc;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.details{
+    display: flex;
+
+    flex-direction: column;
+}
+.details img{
+    width:260px;
+    height: 260px;
+    overflow: hidden;
+    object-position: center;
+}
+.details strong{
+    font-weight: 500;
+    color: #141414;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-align: left;
+}
+.details p{
+    font-size: 0.8rem;
+    color: #7a7a7a;
+    margin: 5px 0px;
+}
+#team .btn{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#team .btn a{
+    color:#8b8b8b;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+#team .btn a i{
+    margin-right: 10px;
+}
+#team .btn a:hover{
+    color: #fff;
+    background-color: #507bfc;
+    box-shadow: 2px 5px 15px rgba(80,123,252,0.5);
+    transition: all ease 0.3s;
+}
+#team .box:hover{
+    box-shadow: 2px 2px 30px rgba(4,15,49,0.1);
+    transform: scale(1.01);
+    transition: all ease 0.1s;
+}
+@media(max-width:612px){
+  .box{
+        flex-grow: 0.7;
+    }
+}
+
