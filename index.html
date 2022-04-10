@@ -46,7 +46,7 @@
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#abou">About</a></li>
-                    <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Speakers</a></li>
                     <li><a class="nav-link scrollto" href="#scope">Scope</a></li>
                     <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
                     <li><a class="nav-link scrollto" href="#registration">Registration Fees</a></li>
@@ -71,7 +71,7 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown">IconVET-2022</h1>
+                                    <h1 class="display-2 text-white animated slideInDown">Modern Education and Technology in Vocational</h1>
                                     <p class="fs-5 fw-medium text-white mb-4 pb-3">October 6<sup>th</sup> - 7<sup>th</sup>, 2022 -
                                         Universitas Pendidikan Ganesha, Bali.</p>
                                     <div class="button-top">
@@ -96,7 +96,7 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown">Modern Education and Technology in Vocational</h1>
+                                    <h1 class="display-2 text-white animated slideInDown">Modern Education  and Technology  in Vocational</h1>
                                     <p class="fs-5 fw-medium text-white mb-4 pb-3">October 6<sup>th</sup> - 7<sup>th</sup>, 2022 -
                                         Universitas Pendidikan Ganesha, Bali.</p>
                                     <div class="button-top">
@@ -149,12 +149,12 @@
     <section id="">
         <div class="container">
             <div id="countdown" class="schedule">
-                <h1><del>Time Left Until The Conference Start</del></h1>
+                <h1 class="soon">Time Left Until The Conference Start</h1>
                 <ul>
-                    <li><mark id="days" class="time"></mark>Days</li>
-                    <li><mark id="hours" class="time"></mark>Hours</li>
-                    <li><mark id="minutes" class="time"></mark>Minutes</li>
-                    <li><mark id="seconds" class="time"></mark>Seconds</li>
+                    <li><span id="days"></span>Days</li>
+                    <li><span id="hours"></span>Hours</li>
+                    <li><span id="minutes"></span>Minutes</li>
+                    <li><span id="seconds"></span>Seconds</li>
                 </ul>
             </div>
         </div>
@@ -514,6 +514,7 @@
         </div>
     </div>
     </section>
+
     <!-- Team End -->
 
     <!-- Scope Start -->
@@ -1368,6 +1369,13 @@
                                             <div class="block-info-1">
                                                 <p class="name">
                                                     <Strong>Agus Aan Jiwa Permana, S.Kom., M.Cs. <label>-
+                                                        Secretariat</label></Strong>
+                                                    <span>Universitas Pendidikan Ganesha, Indonesia</span>
+                                                </p>
+                                            </div>
+                                            <div class="block-info-1">
+                                                <p class="name">
+                                                    <Strong>Agus Aan Jiwa Permana, S.Kom., M.Cs. <label>-
                                                             Secretariat</label></Strong>
                                                     <span>Universitas Pendidikan Ganesha, Indonesia</span>
                                                 </p>
@@ -1871,11 +1879,8 @@
                 document.getElementById("minutes").innerText = Math.floor((remaining % hour) / min);
                 document.getElementById("seconds").innerText = Math.floor((remaining % min) / sec);
                 if (remaining < 0) {
-                    const arrived = document.querySelectorAll("del");
-                    arrived.forEach((arrived) => {
-                        arrived.innerText = "We Have Arrived!";
-                    });
-                    const digit = document.querySelectorAll("mark");
+                    document.getElementsByClassName("soon").innerText = "We Have Arrived!";
+                    const digit = document.querySelectorAll("span");
                     digit.forEach((digit) => {
                         digit.innerText = "0";
                     });

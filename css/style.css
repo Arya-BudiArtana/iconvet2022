@@ -16,9 +16,7 @@
   --primary-gradient2: rgba(85, 155, 236, 0.822);
   --secondary-gradient2: rgba(37, 177, 158, 0.787);
 }
-body{
-  padding: 0;
-  margin: 0;
+*{
   box-sizing: border-box
 }
 h1,
