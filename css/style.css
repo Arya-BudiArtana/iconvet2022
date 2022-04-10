@@ -41,6 +41,7 @@ h6,
   font-weight: 400 !important;
 }
 
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -2374,5 +2375,11 @@ mark{
   .box{
         flex-grow: 0.7;
     }
+}
+
+@media(min-width:1600px){
+  #team .container{
+    flex-wrap: nowrap;
+}
 }
 
