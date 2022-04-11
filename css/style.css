@@ -1527,12 +1527,14 @@ a p:hover::before {
   list-style: none;
 }
 #scope .col-lg-4 ul li::before {
-  content: "➣";
+  content: "\2022";
   color: rgb(83, 120, 207);
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  margin-left: -1.5em;
+  padding-right: 1.5em;
+
 }
 #virtual ul li {
   line-height: 2;
@@ -1553,7 +1555,7 @@ a p:hover::before {
 }
 
 #scope ul h4 {
-  margin-left: -1em;
+  margin-left: -1.3em;
 }
 
 #virtual ul h4 {
