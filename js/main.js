@@ -180,6 +180,20 @@
       window.addEventListener('load', headerScrolled)
       onscroll(document, headerScrolled)
     }
+
+    let selectImg = select('#logo-img')
+    if (selectImg) {
+      const imgLogo= () => {
+        if (window.scrollY > 100) {
+          document.getElementById("logo-img").src = "https://conference.undiksha.ac.id/iconvet/src/img/logo/iconvet.png";
+        } else {
+          document.getElementById("logo-img").src = "https://conference.undiksha.ac.id/iconvet/src/img/logo/iconvet2.png";
+
+        }
+      }
+      window.addEventListener('load', imgLogo)
+      onscroll(document, imgLogo)
+    }
   
     /**
      * Back to top button

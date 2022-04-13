@@ -20,7 +20,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
+  --bs-primary: linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(6, 98, 218) 100%);
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -509,7 +509,7 @@ progress {
 }
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100vh;
 }
 .img-thumbnail {
   padding: 0.25rem;
@@ -2552,7 +2552,7 @@ fieldset:disabled .btn {
 }
 .btn-primary {
   color: #000;
-  background: linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(68, 70, 183) 51%, rgb(6, 98, 218) 100%);
+  background: linear-gradient(45deg, rgb(59, 62, 227) 0%, rgb(44, 68, 185) 25%, rgb(6, 98, 218) 100%);
   border-color: none;
 }
 .btn-primary:hover {
