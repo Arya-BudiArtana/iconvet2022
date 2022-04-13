@@ -1511,7 +1511,7 @@ a p:hover::before {
       var(--primary-gradient2),
       var(--secondary-gradient2)
     ),
-    url("/2022/img/slider1.jpg")
+    url("/iconvet/2022/img/slider1.jpg")
       no-repeat center center / cover;
 }
 
@@ -1521,7 +1521,7 @@ a p:hover::before {
       var(--primary-gradient),
       var(--secondary-gradient2)
     ),
-    url("/2022/img/slider2.jpg")
+    url("/iconvet/2022/img/slider2.jpg")
       no-repeat center center / cover;
 }
 .card {
@@ -2415,7 +2415,7 @@ mark{
   bottom: 0;
   left: 0;
   position: absolute;
-  right: 0;
+  right: 10%;
   top: 0;
   height: 100%;
   z-index: 10;
@@ -2454,5 +2454,17 @@ mark{
     font-size: calc(0.8rem + 1vw);
     font-weight: 600;
     line-height: 1.2;
+  }
+
+  .inner-hero {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 20%;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+    flex: 1;
+  
   }
 }
